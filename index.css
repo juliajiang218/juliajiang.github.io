@@ -1,0 +1,206 @@
+/* Universal styles */
+*{
+    font-size: 16px;
+}
+body{
+    background-color: black;
+    font-family: "Irish Grover", system-ui;
+}
+
+.body{
+    background-color: wheat;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    height: 600px;
+    width: 90%;
+    display: flex;
+    overflow: scroll;
+}
+
+/* header */
+.header{
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
+
+#title{
+    font-size: 30px;
+}
+
+#theme{
+    font-size: 25px;
+}
+
+/* app container */
+.container{
+    display: flex;
+}
+
+/* universal styles for recs */
+
+.rectangular{
+    width: 330px;
+    height: 215px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    justify-content: center; /* pack items around center*/
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.title h3{
+    color: black;
+    font-size: 24px;
+    margin: 18px auto;
+    padding: 0;
+}
+
+/* universal styles for clickable button */
+.book{
+    width: 150px;
+    height: 50px;
+    border: 3px solid black;
+    writing-mode: horizontal-tb;
+    border-radius: 3%;
+}
+
+.book:hover{
+    background-color: rgba(229, 80, 105, 0.667);
+    /* border: none; */
+    border: 2px solid black;
+    border-block-color: rgba(229, 80, 105, 0.667);
+}
+
+.book a:active{
+    color: white;
+    border: none;
+}
+
+.body a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(238, 84, 109);
+    font-weight: 800;
+}
+
+/* pre-ww1 section */
+
+.pre-WW1{
+    width: 40%;
+    background-image: url(./img/pre-WW1-backgroudn.jpeg);
+    height: 100%;
+    text-align: center;
+}
+
+.JE{
+    background-image: url(./img/Jane-Eyre.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#JE-box{
+    position: relative;
+    left: 20%;
+    top: 25%;
+}
+
+#JE{
+    position: relative;
+    top: 70px;
+}
+
+/* post-ww1 section */
+.post-WW1{
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    background-image: url(./img/post-ww1-background.jpeg);
+}
+
+.WSS{
+    background-image: url(./img/wide\ sargasso\ sea.jpeg);
+    background-size: auto 80px;
+    background-position: center;
+}
+
+.MD{
+    background-image: url(./img/Ms\ Dalloway.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#MD{
+    position: relative;
+    top: 70px;
+}
+
+.TRUST{
+    background-image: url(./img/trust.jpg);
+    background-size: auto 200px;
+    background-position: center;
+}
+
+/* breadcrumb section */
+.breadcrumb{
+    display: inline-flex;
+    position: absolute;
+    top: 120px;
+    margin-left: 3%;
+    background-color: transparent;
+    list-style-type: none; 
+}
+
+.breadcrumb a{
+    float: left;
+    color: black;
+    background: lightpink;
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 15px;
+    padding: 0 5px;
+    position: relative;
+}
+
+.breadcrumb .location a::before,
+.breadcrumb .location a::after {
+  content: "";
+  position: absolute;
+  border-color: lightpink;
+  border-style: solid;
+  border-width: 10px 5px;
+}
+
+.breadcrumb .location a::after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: lightpink;
+}
+
+.breadcrumb .location a::before {
+    left: -10px;
+    border-left-color: transparent;
+}
+  
+.breadcrumb .location a:hover {
+    background-color: rgba(229, 80, 105);
+}
+
+.breadcrumb .location a:hover::before {
+    border-color: rgba(229, 80, 105);
+    border-left-color: transparent;
+}
+
+.breadcrumb .location a:hover::after {
+    border-left-color: rgba(229, 80, 105);
+}
+
+/* copyright section */
+.copyright{
+    color: white;
+    margin-left: 10%;
+}
